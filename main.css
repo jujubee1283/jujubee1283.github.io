@@ -67,11 +67,11 @@ input#query {
 }
 
 .pagination #left-arrow {
-	border-right: 10px solid black;
+	border-right: 10px solid #999;
 }
 
 .pagination #right-arrow {
-	border-left: 10px solid black;
+	border-left: 10px solid #999;
 }
 
 .pagination #page-num {
