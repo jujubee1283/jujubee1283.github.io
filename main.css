@@ -1,0 +1,57 @@
+.container {
+	width: 700px;
+	margin: 50px auto;
+	border: 1px solid black;
+}
+
+.search {
+	padding: 40px 10px 30px 20px;
+}
+
+input#query {
+	line-height: 20px;
+	padding-left: 6px;
+	width: 150px;
+}
+
+.search-btn {
+	line-height: 19px;
+	vertical-align: top;
+	width: 75px;
+	border-radius: 4px;
+	border: 1px solid #aaa;
+	background-color: #efefef;
+}
+
+.results-section {
+	padding: 10px;
+	border-top: 1px solid black;
+}
+
+#results {
+	padding: 5px 0;
+}
+
+#results .image,
+#results .details {
+	display: inline-block;
+}
+
+#results .image {
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+#results .result {
+	margin-bottom: 20px;
+}
+
+#results .result .details {
+	width: 580px;
+	margin-left: 20px;
+}
+
+#results .result .details .stream-name {
+	font-size: 24px;
+	font-weight: bold;
+}
