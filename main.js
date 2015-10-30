@@ -24,10 +24,11 @@ function searchCallback(data) {
 	hideById('loading-spinner');
 	if (data.status) {
 		console.log('Failed! Status: ' + data.status);
+		searchResults = [];
 	} else {
 		searchResults = data.streams;
-		populateResults();
 	}
+	populateResults();
 }
 
 function populateResults() {
