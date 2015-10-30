@@ -1,4 +1,3 @@
-
 var searchResults;
 var currentPage = 0;
 var pageLength = 5;
@@ -16,7 +15,9 @@ function search() {
 	script.type = 'text/javascript';
 	script.src = apiUrl + query + '&callback=searchCallback';
 	document.body.appendChild(script);
-	document.body.removeChild(document.body.lastChild); // remove script after it's been executed
+
+	// remove script after it's been executed
+	document.body.removeChild(document.body.lastChild);
 }
 
 function searchCallback(data) {
@@ -136,11 +137,10 @@ function showById(id) {
 	document.getElementById(id).style.visibility = 'visible';
 }
 
-
 function initHandler() {
 	// do search on enter key pressed in the query input
 	document.getElementById('query').onkeypress = function(e) {
-		if(e.keyCode == 13) { // on press enter
+		if(e.keyCode == 13) {
 			search();
 		}
 	}
