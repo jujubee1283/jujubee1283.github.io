@@ -4,22 +4,24 @@
 	<script type="text/javascript" src="main.js"></script>
 </head>
 
-<body>
-
+<body onload="initHandler()">
 	<div class="container">
 		<div class="search">
 			<input id="query" placeholder="Search query..."></input>
 			<button class="search-btn" type="button" onclick="search()">Search</button>
 		</div>
-		<div class="results-section">
+		<div id="results-section">
 			<div class="total-pagination-row">
-				<div id="total-results"></div>
-				<div class="pagination"></div>
+				<div id="total-results">Total results: 0</div>
+				<div class="pagination">
+					<div id="left-arrow" onclick="pageDown()" style="visibility:hidden"></div>
+					<div id="page-num">0/0</div>
+					<div id="right-arrow" onclick="pageUp()" style="visibility:hidden"></div>
+				</div>
 			</div>
-
 			<div id="results"></div>
 		</div>
+		<div id="loading-spinner" style="visibility:hidden"></div>
 	</div>
-
 </body>
 
